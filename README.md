@@ -7,15 +7,15 @@ needlessly complicated configuration.
 
 ## Screenshots
 
-###Main Window
+### Main Window
 
 ![Main Window](docs/main.png)
 
-###Command Line Window
+### Command Line Window
 
 ![Command Line Window](docs/commandline.png)
 
-###Server Update Window
+### Server Update Window
 
 ![Update Window](docs/update.png)
 
@@ -35,7 +35,7 @@ the GUI is built with WPF and Mono doesn't support WPF.
 To build it yourself:
 
 - You will need to have Visual Studio installed (the Community edition is sufficient).
-- To generate Release builds, you will need to have the 64-bit version of [7-Zip](https://www.7-zip.org/) installed at `%PROGRAMW6432` (this is the default install location and is usually `C:\\Program Files`). Alternatively, you can modify the [post-build events](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-specify-build-events-csharp?view=vs-2019) to remove the 7-Zip command.
+- To generate Release builds, you will need to have the 64-bit version of [7-Zip](https://www.7-zip.org/) installed at `%PROGRAMW6432` (this is the default install location and is usually `C:\Program Files`). Alternatively, you can modify the [post-build events](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-specify-build-events-csharp?view=vs-2019) to remove the 7-Zip command.
 
 If you don't want to build it yourself, you can download a pre-built 7-Zip
 archive from a [release](https://github.com/spakov/kf2-server-gui/releases).
