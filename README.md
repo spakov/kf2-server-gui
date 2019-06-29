@@ -7,15 +7,15 @@ needlessly complicated configuration.
 
 ## Screenshots
 
-The main window
+###Main Window
 
 ![Main Window](docs/main.png)
 
-The command line viewer
+###Command Line Window
 
 ![Command Line Window](docs/commandline.png)
 
-The server updater
+###Server Update Window
 
 ![Update Window](docs/update.png)
 
@@ -23,12 +23,22 @@ The server updater
 
 You'll need to have a Killing Floor 2 server instance installed on your system.
 You'll want to refer to the [Killing Floor 2
-wiki](https://wiki.killingfloor2.com/index.php?title=Dedicated_Server_(Killing_Floor_2)#Downloading_the_Killing_Floor_2_Server)
+wiki](https://wiki.killingfloor2.com/index.php?title=Dedicated_Server_(Killing_Floor_2)#Downloading\_the\_Killing\_Floor\_2\_Server)
 for information on how to do that if you haven't set up a server already.
 
 This is designed to work on 64-bit Windows systems with .NET Framework 4.7.2 or
 newer. This would also work perfectly well on Linux if not for the fact that
 the GUI is built with WPF and Mono doesn't support WPF.
+
+### Building
+
+To build it yourself:
+
+- You will need to have Visual Studio installed (the Community edition is sufficient).
+- To generate Release builds, you will need to have the 64-bit version of [7-Zip](https://www.7-zip.org/) installed at `%PROGRAMW6432` (this is the default install location and is usually `C:\\Program Files`). Alternatively, you can modify the [post-build events](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-specify-build-events-csharp?view=vs-2019) to remove the 7-Zip command.
+
+If you don't want to build it yourself, you can download a pre-built 7-Zip
+archive from a [release](https://github.com/spakov/kf2-server-gui/releases).
 
 ## Installation
 
@@ -119,7 +129,7 @@ since I found them useful:
 
 - Connect to your own instance of the server on your machine using `` `open 127.0.0.1`` in Killing Floor 2 (assuming you're playing on the same machine that you're hosting the server on).
 - Set up port forwarding to allow your friends to join your server. I've found it easiest to have them use `` `open x.x.x.x`` to join instead of messing with Steam.
-- Use [WhatIsMyIp.com](https://www.whatismyip.com/) or similar to figure out what your external IP address is.
+- Use [WhatIsMyIp.com](https://www.whatismyip.com/) or similar to figure out what your external IP address is if you don't already know it.
 - I haven't noticed any issues with people randomly connecting to the server, especially when running it only occasionally, so personally I'm not terribly concerned with using a secure admin password.
 
 ## License
