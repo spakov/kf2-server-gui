@@ -1,0 +1,41 @@
+﻿<Window x:Class="kf2_server_gui.Properties.CommandLineWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:p="clr-namespace:kf2_server_gui.Properties"
+        xmlns:l="clr-namespace:kf2_server_gui"
+        mc:Ignorable="d"
+        Title="{x:Static p:Strings.CommandLine}" Height="240" Width="420" WindowStartupLocation="CenterOwner"
+        Style="{DynamicResource WindowStyle}" Topmost="True">
+  <Window.Resources>
+    <ResourceDictionary>
+      <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/kf2-server-gui;component/Resources/DarkStyle.xaml" />
+      </ResourceDictionary.MergedDictionaries>
+    </ResourceDictionary>
+  </Window.Resources>
+  <Grid Margin="12">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition/>
+      <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <StackPanel Grid.Row="0">
+      <TextBlock x:Name="introLabel"/>
+    </StackPanel>
+    <DockPanel Grid.Row="1" Margin="0,6,0,0">
+      <TextBox x:Name="commandTextBox" FontFamily="Consolas" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" IsReadOnly="True" TabIndex="1"/>
+    </DockPanel>
+    <DockPanel Grid.Row="2" Margin="0,6,0,0">
+      <TextBlock x:Name="randomTextBlock" DockPanel.Dock="Left" TextWrapping="Wrap" Margin="0,0,20,0" HorizontalAlignment="Left"/>
+      <Button x:Name="okButton" DockPanel.Dock="Right" HorizontalAlignment="Right" IsDefault="True" IsCancel="True" Click="OkButton_Click" MinWidth="20" Margin="-20,0,0,0" ToolTip="{x:Static p:Strings.CloseToolTip}" TabIndex="2">
+        <Image x:Name="okImage" RenderOptions.BitmapScalingMode="HighQuality" Source="/kf2-server-gui;component/Resources/ok.png" Width="16">
+          <Image.Effect>
+            <l:InvertEffect/>
+          </Image.Effect>
+        </Image>
+      </Button>
+    </DockPanel>
+  </Grid>
+</Window>

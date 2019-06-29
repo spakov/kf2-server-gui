@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AdminPassword" xml:space="preserve">
+    <value>Admin Password</value>
+  </data>
+  <data name="AdminPasswordToolTip" xml:space="preserve">
+    <value>The administrative user's password.
+
+IMPORTANT: This is not secure and will be stored as plaintext. Do not use a password you use elsewhere here.</value>
+  </data>
+  <data name="AdminUsername" xml:space="preserve">
+    <value>Admin Username</value>
+  </data>
+  <data name="AdminUsernameToolTip" xml:space="preserve">
+    <value>The name of the administrative user</value>
+  </data>
+  <data name="BadServerDirectory" xml:space="preserve">
+    <value>Server directory is not valid or does not exist. Mouse over the labels for some tips.</value>
+  </data>
+  <data name="CommandLine" xml:space="preserve">
+    <value>Command Line</value>
+  </data>
+  <data name="CommandLineIntro" xml:space="preserve">
+    <value>Using this command line to start the server:</value>
+  </data>
+  <data name="CommandLineRandom" xml:space="preserve">
+    <value>A map will be selected randomly each time you display the command line, start the server, or restart the server.</value>
+  </data>
+  <data name="CommandLineToolTip" xml:space="preserve">
+    <value>Display the command line…</value>
+  </data>
+  <data name="DefaultAdminPassword" xml:space="preserve">
+    <value>changeme</value>
+  </data>
+  <data name="DefaultAdminUsername" xml:space="preserve">
+    <value>admin</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>Difficulty</value>
+  </data>
+  <data name="DifficultyToolTip" xml:space="preserve">
+    <value>Select the server difficulty</value>
+  </data>
+  <data name="Endless" xml:space="preserve">
+    <value>Endless</value>
+  </data>
+  <data name="ExtraOptions" xml:space="preserve">
+    <value>Extra Options</value>
+  </data>
+  <data name="ExtraOptionsToolTip" xml:space="preserve">
+    <value>Specify any extra options you want to pass to the server. Start each option with a question mark and do not use spaces. Find these in the console output and refer to the Killing Floor 2 wiki (or Google) for help.</value>
+  </data>
+  <data name="GameModeToolTip" xml:space="preserve">
+    <value>Select your preferred game mode</value>
+  </data>
+  <data name="Hard" xml:space="preserve">
+    <value>Hard</value>
+  </data>
+  <data name="HellOnEarth" xml:space="preserve">
+    <value>Hell on Earth</value>
+  </data>
+  <data name="KF2ServerFolder" xml:space="preserve">
+    <value>Killing Floor 2 Server Folder</value>
+  </data>
+  <data name="KF2ServerFolderBrowseToolTip" xml:space="preserve">
+    <value>Select the Killing Floor 2 server folder…</value>
+  </data>
+  <data name="KF2ServerFolderToolTip" xml:space="preserve">
+    <value>Select the folder that contains your Killing Floor 2 server</value>
+  </data>
+  <data name="MapRefreshToolTip" xml:space="preserve">
+    <value>Reload the available maps</value>
+  </data>
+  <data name="MaxPlayerCount" xml:space="preserve">
+    <value>Max Player Count</value>
+  </data>
+  <data name="MaxPlayerCountToolTip" xml:space="preserve">
+    <value>The maximum number of players that can connect to the server</value>
+  </data>
+  <data name="Normal" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="RandomMap" xml:space="preserve">
+    <value>Pick a Random Map</value>
+  </data>
+  <data name="RestartToolTip" xml:space="preserve">
+    <value>Restart the server</value>
+  </data>
+  <data name="SelectAMap" xml:space="preserve">
+    <value>A starting map must be selected</value>
+  </data>
+  <data name="ServerIsRunning" xml:space="preserve">
+    <value>Server is running</value>
+  </data>
+  <data name="ServerIsStopped" xml:space="preserve">
+    <value>Server directory is valid; server is not running</value>
+  </data>
+  <data name="StartingMap" xml:space="preserve">
+    <value>Starting Map</value>
+  </data>
+  <data name="StartingMapToolTip" xml:space="preserve">
+    <value>Pick the first map players will join</value>
+  </data>
+  <data name="StartToolTip" xml:space="preserve">
+    <value>Start the server…</value>
+  </data>
+  <data name="StopToolTip" xml:space="preserve">
+    <value>Stop the server</value>
+  </data>
+  <data name="Suicidal" xml:space="preserve">
+    <value>Suicidal</value>
+  </data>
+  <data name="Survival" xml:space="preserve">
+    <value>Survival</value>
+  </data>
+  <data name="Versus" xml:space="preserve">
+    <value>Versus Survival</value>
+  </data>
+  <data name="Weekly" xml:space="preserve">
+    <value>Weekly Outbreaks</value>
+  </data>
+  <data name="WindowTitle" xml:space="preserve">
+    <value>Killing Floor 2 Server GUI</value>
+  </data>
+  <data name="GameLength" xml:space="preserve">
+    <value>Game Length</value>
+  </data>
+  <data name="GameLengthToolTip" xml:space="preserve">
+    <value>The length of each game (4 waves, 7 waves, or 10 waves)</value>
+  </data>
+  <data name="Long" xml:space="preserve">
+    <value>Long</value>
+  </data>
+  <data name="Medium" xml:space="preserve">
+    <value>Medium</value>
+  </data>
+  <data name="Short" xml:space="preserve">
+    <value>Short</value>
+  </data>
+  <data name="UpdateToolTip" xml:space="preserve">
+    <value>Update the server…</value>
+  </data>
+  <data name="CloseToolTip" xml:space="preserve">
+    <value>Close the window</value>
+  </data>
+  <data name="UpdateServer" xml:space="preserve">
+    <value>Update Server</value>
+  </data>
+  <data name="BadSteamcmdPath" xml:space="preserve">
+    <value>steamcmd path is not valid. Mouse over the labels for some tips.</value>
+  </data>
+  <data name="BadUpdateScript" xml:space="preserve">
+    <value>The update script is invalid. At a minimum, it must contain a line like "app_update {0}".</value>
+  </data>
+  <data name="CouldNotWriteUpdateScript" xml:space="preserve">
+    <value>Failed to write the update script. This file is written to the KF2 server folder.</value>
+  </data>
+  <data name="CouldNotWriteUpdateScriptCaption" xml:space="preserve">
+    <value>Write Error</value>
+  </data>
+  <data name="DefaultUpdateScript" xml:space="preserve">
+    <value>//
+login anonymous
+force_install_dir {0}
+app_update 232130
+exit</value>
+  </data>
+  <data name="ReadyToUpdate" xml:space="preserve">
+    <value>Ready to update server</value>
+  </data>
+  <data name="SteamcmdPath" xml:space="preserve">
+    <value>Path to steamcmd</value>
+  </data>
+  <data name="SteamcmdPathBrowseToolTip" xml:space="preserve">
+    <value>Select the steamcmd executable…</value>
+  </data>
+  <data name="SteamcmdPathToolTip" xml:space="preserve">
+    <value>Select the path to your steamcmd executable</value>
+  </data>
+  <data name="UpdateServerIntro" xml:space="preserve">
+    <value>The following script will be used to update the server. Feel free to modify it and your changes will be saved.</value>
+  </data>
+  <data name="UpdateServerIntroToolTip" xml:space="preserve">
+    <value>The default script should work well for you in most instances</value>
+  </data>
+  <data name="UpdatingServer" xml:space="preserve">
+    <value>Updating server</value>
+  </data>
+  <data name="ValidateAfterDownloading" xml:space="preserve">
+    <value>Validate server files after downloading</value>
+  </data>
+  <data name="ValidateAfterDownloadingToolTip" xml:space="preserve">
+    <value>This is probably not needed, but use it if you tend to get corrupted files during the update</value>
+  </data>
+  <data name="DarkStyle" xml:space="preserve">
+    <value>Dark style</value>
+  </data>
+  <data name="DarkStyleToolTip" xml:space="preserve">
+    <value>No judgment here, use whichever you prefer!</value>
+  </data>
+  <data name="VersionString" xml:space="preserve">
+    <value>{0} version {1}</value>
+  </data>
+</root>

@@ -1,0 +1,65 @@
+﻿<Window x:Class="kf2_server_gui.Properties.UpdateWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:p="clr-namespace:kf2_server_gui.Properties"
+        xmlns:l="clr-namespace:kf2_server_gui"
+        mc:Ignorable="d"
+        Title="{x:Static p:Strings.UpdateServer}" Height="320" Width="520"
+        Style="{DynamicResource WindowStyle}" WindowStartupLocation="CenterOwner">
+  <Window.Resources>
+    <ResourceDictionary>
+      <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/kf2-server-gui;component/Resources/DarkStyle.xaml" />
+      </ResourceDictionary.MergedDictionaries>
+    </ResourceDictionary>
+  </Window.Resources>
+  <DockPanel>
+    <StatusBar DockPanel.Dock="Bottom">
+      <StatusBarItem x:Name="statusStatusBarItem"/>
+    </StatusBar>
+    <Grid Margin="12">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+      </Grid.RowDefinitions>
+      <DockPanel Grid.Row="0" HorizontalAlignment="Stretch">
+        <TextBlock Text="{x:Static p:Strings.SteamcmdPath}" DockPanel.Dock="Left" Margin="0,0,6,0" VerticalAlignment="Top" ToolTip="{x:Static p:Strings.SteamcmdPathToolTip}"/>
+        <Button x:Name="steamcmdPathBrowseButton" TabIndex="2" DockPanel.Dock="Right" Height="21" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,6,0" ToolTip="{x:Static p:Strings.SteamcmdPathBrowseToolTip}" Click="SteamcmdPathBrowseButton_Click">
+          <Image RenderOptions.BitmapScalingMode="HighQuality" Width="16" Source="/kf2-server-gui;component/Resources/steam.ico"/>
+        </Button>
+        <TextBox x:Name="steamcmdPathTextBox" TabIndex="1" Height="21" VerticalAlignment="Bottom" MaxLines="1" IsUndoEnabled="True" Margin="0,0,6,0" DockPanel.Dock="Top" TextChanged="SteamcmdPathTextBox_TextChanged"/>
+      </DockPanel>
+      <StackPanel Grid.Row="1" Margin="0,6,0,0">
+        <TextBlock Text="{x:Static p:Strings.UpdateServerIntro}" TextWrapping="Wrap" DockPanel.Dock="Top" ToolTip="{x:Static p:Strings.UpdateServerIntroToolTip}"/>
+      </StackPanel>
+      <DockPanel Grid.Row="2" Margin="0,6,0,0">
+        <TextBox x:Name="updateScriptTextBox" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" AcceptsReturn="True" FontFamily="Consolas" TextChanged="UpdateScriptTextBox_TextChange" TabIndex="3"/>
+      </DockPanel>
+      <StackPanel Grid.Row="3" Margin="0,6,0,0">
+        <CheckBox x:Name="validateCheckBox" Content="{x:Static p:Strings.ValidateAfterDownloading}" ToolTip="{x:Static p:Strings.ValidateAfterDownloadingToolTip}" Width="368" Checked="ValidateCheckBox_Checked" Unchecked="ValidateCheckBox_Unchecked" HorizontalAlignment="Left" TabIndex="4"/>
+      </StackPanel>
+      <StackPanel Grid.Row="4" DockPanel.Dock="Bottom" Orientation="Horizontal" Margin="0,6,0,0" HorizontalAlignment="Right">
+        <Button x:Name="updateButton" TabIndex="5" Margin="0,0,6,0" IsEnabled="False" ToolTip="{x:Static p:Strings.UpdateToolTip}" Click="UpdateButton_Click">
+          <Image x:Name="updateImage" Source="/kf2-server-gui;component/Resources/update.png" RenderOptions.BitmapScalingMode="HighQuality" Width="32">
+            <Image.Effect>
+              <l:InvertEffect/>
+            </Image.Effect>
+          </Image>
+        </Button>
+        <Button x:Name="okButton" TabIndex="6" ToolTip="{x:Static p:Strings.CloseToolTip}" Click="OkButton_Click" IsCancel="True" IsDefault="True">
+          <Image x:Name="okImage" Source="/kf2-server-gui;component/Resources/ok.png" RenderOptions.BitmapScalingMode="HighQuality" Width="16">
+            <Image.Effect>
+              <l:InvertEffect/>
+            </Image.Effect>
+          </Image>
+        </Button>
+      </StackPanel>
+    </Grid>
+  </DockPanel>
+</Window>
+  
